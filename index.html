@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <div class="bodyCal">
+        <div class="topCal">
+            <p>Calculator</p>
+        </div>
+        <div class="showCal">
+            <a onclick="reCal();"><p id="lopp"></p></a>
+            <h1 id="opp">0</h1>
+            
+        </div>
+        <div class="opCal">
+            <button id="a1" onclick="numberClick('a1');">(</button>
+            <button id="a2" onclick="numberClick('a2');">)</button>
+            <button id="a3" onclick="numberClick('a3');">%</button>
+            <button id="a4" onclick="ce();">CE</button>
+            <button id="b1" onclick="numberClick('b1');">7</button>
+            <button id="b2" onclick="numberClick('b2');">8</button>
+            <button id="b3" onclick="numberClick('b3');">9</button>
+            <button id="b4" onclick="divide();">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M272 96c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 320c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM400 288c17.7 0 32-14.3 32-32s-14.3-32-32-32H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H400z"/></svg>
+            </button>
+            <button id="c1" onclick="numberClick('c1');">4</button>
+            <button id="c2" onclick="numberClick('c2');">5</button>
+            <button id="c3" onclick="numberClick('c3');">6</button>
+            <button id="c4" onclick="multiply();">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/></svg>
+            </button>
+            <button id="d1" onclick="numberClick('d1');">1</button>
+            <button id="d2" onclick="numberClick('d2');">2</button>
+            <button id="d3" onclick="numberClick('d3');">3</button>
+            <button id="d4" onclick="minus();">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>
+            </button>
+            <button id="e1" onclick="numberClick('e1');">0</button>
+            <button id="e2" onclick="numberClick('e2');">.</button>
+            <button id="e3" onclick="equal();">=</button>
+            <button id="e4" onclick="add();">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
+            </button>
+        </div>
+        <div class="footCal">
+            <button class="clear" onclick="clearScreen();">ClearAll</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

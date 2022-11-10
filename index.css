@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.bodyCal{
+    width: 500px;
+}
+
+.topCal{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: cadetblue;
+}
+
+.topCal p{
+    
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.showCal {
+    background-color: aquamarine;
+    height: 100px;
+    padding: 20px;
+}
+
+.showCal p,h1{
+    text-align: right;
+}
+
+.showCal p{
+    font-size: 14px;
+    color: grey;
+}
+
+.showCal h1{
+    font-size: 36px;
+}
+.opCal{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: grey;
+}
+
+svg {
+    width: 30px;
+    height: 30px;
+    fill: white;
+}
+
+button{
+    height: 60px;
+    margin: 5px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 24px;
+}
+
+button:hover,button:active{
+    background-color: lightblue;
+    font-size: grey;
+    border: 10px darkblue;
+}
+
+.footCal{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: right;
+    background-color: red;
+}
+
+.clear{
+    height: 38px;
+    font-size: 14px;
+}
+
